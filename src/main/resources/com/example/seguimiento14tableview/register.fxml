@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seguimiento14tableview.RegisterController">
+   <children>
+      <Label layoutX="244.0" layoutY="173.0" text="Ingresar monto">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="montoTF" layoutX="210.0" layoutY="200.0" />
+      <ComboBox fx:id="tipoMontoCB" layoutX="210.0" layoutY="136.0" prefWidth="150.0" promptText="Tipo de monto" />
+      <Label layoutX="194.0" layoutY="106.0" text="Escoga el tipo de monto a ingresar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="descMontoTF" layoutX="210.0" layoutY="272.0" />
+      <Label layoutX="179.0" layoutY="241.0" text="Ingresar una descripcion acerca del monto" />
+      <DatePicker fx:id="fechaMontoDP" layoutX="204.0" layoutY="336.0" />
+      <Label layoutX="249.0" layoutY="309.0" text="Indique la fecha" />
+      <Label layoutX="185.0" layoutY="45.0" text="Registro de Montos" textFill="#4743b5">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="enviarBtn" layoutX="488.0" layoutY="348.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="82.0" text="Enviar" />
+      <Button fx:id="regresarBtn" layoutX="36.0" layoutY="344.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="82.0" text="Regresar" />
+   </children>
+</AnchorPane>
