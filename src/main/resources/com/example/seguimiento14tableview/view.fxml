@@ -6,15 +6,15 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seguimiento14tableview.ViewController">
    <children>
-      <Button fx:id="verIngresosBtn" layoutX="484.0" layoutY="343.0" mnemonicParsing="false" text="Ver ingresos">
+      <Button fx:id="verIngresosBtn" layoutX="484.0" layoutY="330.0" mnemonicParsing="false" text="Ver ingresos">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>
-      <Button fx:id="verGastosBtn" layoutX="375.0" layoutY="343.0" mnemonicParsing="false" text="Ver gastos">
+      <Button fx:id="verGastosBtn" layoutX="374.0" layoutY="330.0" mnemonicParsing="false" text="Ver gastos">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>
-      <Button fx:id="verTodoBtn" layoutX="268.0" layoutY="343.0" mnemonicParsing="false" text="Ver todo">
+      <Button fx:id="verTodoBtn" layoutX="268.0" layoutY="330.0" mnemonicParsing="false" text="Ver todo">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>
@@ -26,9 +26,14 @@
             <TableColumn fx:id="fechaTC" prefWidth="74.66667683919269" text="Fecha" />
         </columns>
       </TableView>
-      <Button fx:id="regresarBtn" layoutX="22.0" layoutY="343.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="72.0" text="Regresar">
+      <Button fx:id="regresarBtn" layoutX="22.0" layoutY="330.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Regresar">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Italic" size="12.0" />
          </font></Button>
+      <Button fx:id="eliminarMontoBtn" layoutX="9.0" layoutY="117.0" mnemonicParsing="false" text="Eliminar monto" />
+      <Label layoutX="22.0" layoutY="368.0" prefHeight="17.0" prefWidth="387.0" text="Nota: antes de usar el boton &quot;Eliminar monto&quot;, debe seleccionar uno" textFill="#001bff">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
    </children>
 </AnchorPane>

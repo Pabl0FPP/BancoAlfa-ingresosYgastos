@@ -50,6 +50,9 @@ public class ViewController implements Initializable {
     @FXML
     private Button regresarBtn;
 
+    @FXML
+    private Button eliminarMontoBtn;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -85,6 +88,15 @@ public class ViewController implements Initializable {
                     MontoList.getInstance().getMontos()
             );
         });
+
+        eliminarMontoBtn.setOnAction(action->{
+            Monto selectedMonto = tablaMontoTV.getSelectionModel().getSelectedItem();
+            if (selectedMonto != null) {
+                MontoList.getInstance().getMontos().remove(selectedMonto);
+            }
+
+        });
+
 
     }
 
